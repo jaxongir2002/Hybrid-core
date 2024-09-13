@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_landing_tags",
+  "info": {
+    "displayName": "tags"
+  },
+  "options": {},
+  "attributes": {
+    "tags_text": {
+      "type": "string"
+    }
+  }
+}

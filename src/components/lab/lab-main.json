@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_lab_lab_mains",
+  "info": {
+    "displayName": "lab_main"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "string"
+    }
+  }
+}

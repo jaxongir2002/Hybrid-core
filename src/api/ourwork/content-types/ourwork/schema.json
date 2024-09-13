@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ourworks",
+  "info": {
+    "singularName": "ourwork",
+    "pluralName": "ourworks",
+    "displayName": "ourwork"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videos": {
+      "displayName": "ourwork",
+      "type": "component",
+      "repeatable": true,
+      "component": "ourwork.ourwork"
+    }
+  }
+}

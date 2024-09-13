@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landings",
+  "info": {
+    "singularName": "landing",
+    "pluralName": "landings",
+    "displayName": "landing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Second_section_3_videos": {
+      "displayName": "seo",
+      "type": "component",
+      "repeatable": true,
+      "component": "seo.seo"
+    },
+    "about_us": {
+      "type": "string"
+    },
+    "video_magic": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "breifs",
+  "info": {
+    "singularName": "breif",
+    "pluralName": "breifs",
+    "displayName": "breif"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_video": {
+      "type": "string"
+    },
+    "main_title": {
+      "type": "string",
+      "default": "We are misfits; we are not an agency, and we don’t just do production; we are a combination of both thinkers and doers. We’re a combination of human and more than human. A collaboration between art and tech."
+    }
+  }
+}

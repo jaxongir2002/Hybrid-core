@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blog_description_titles",
+  "info": {
+    "displayName": "description_title"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

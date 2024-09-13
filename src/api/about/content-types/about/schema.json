@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "about",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_description": {
+      "type": "string"
+    },
+    "videos": {
+      "displayName": "videos",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-videos.videos"
+    },
+    "video": {
+      "displayName": "teamVideo",
+      "type": "component",
+      "repeatable": true,
+      "component": "about-videos.team-video"
+    }
+  }
+}

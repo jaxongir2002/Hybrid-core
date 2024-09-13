@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_installation_installation_videos",
+  "info": {
+    "displayName": "installation_video"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    }
+  }
+}

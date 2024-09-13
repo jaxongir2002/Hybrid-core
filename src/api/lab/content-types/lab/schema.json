@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "labs",
+  "info": {
+    "singularName": "lab",
+    "pluralName": "labs",
+    "displayName": "Lab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lab_main": {
+      "displayName": "lab_main",
+      "type": "component",
+      "repeatable": false,
+      "component": "lab.lab-main"
+    },
+    "main_list_videos": {
+      "displayName": "lab_video_list",
+      "type": "component",
+      "repeatable": true,
+      "component": "lab.lab-video-list"
+    }
+  }
+}

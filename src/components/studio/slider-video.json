@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_studio_slider_videos",
+  "info": {
+    "displayName": "slider_video"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    }
+  }
+}

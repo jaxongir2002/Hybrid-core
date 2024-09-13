@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blog_text_videos",
+  "info": {
+    "displayName": "text_video"
+  },
+  "options": {},
+  "attributes": {
+    "title_text": {
+      "type": "string"
+    }
+  }
+}

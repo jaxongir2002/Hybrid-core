@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filter_blogs",
+  "info": {
+    "singularName": "filter-blog",
+    "pluralName": "filter-blogs",
+    "displayName": "Filter_Blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "displayName": "text_video",
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.text-video"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "installations",
+  "info": {
+    "singularName": "installation",
+    "pluralName": "installations",
+    "displayName": "installation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "installation_videos": {
+      "displayName": "installation_video",
+      "type": "component",
+      "repeatable": true,
+      "component": "installation.installation-video"
+    }
+  }
+}

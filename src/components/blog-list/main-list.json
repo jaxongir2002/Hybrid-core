@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_list_main_lists",
+  "info": {
+    "displayName": "main_list"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

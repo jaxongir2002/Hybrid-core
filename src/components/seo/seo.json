@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "seo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "tags_name": {
+      "displayName": "tags",
+      "type": "component",
+      "repeatable": true,
+      "component": "landing.tags"
+    }
+  }
+}

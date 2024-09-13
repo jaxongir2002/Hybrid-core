@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_videos_videos",
+  "info": {
+    "displayName": "videos",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "studios",
+  "info": {
+    "singularName": "studio",
+    "pluralName": "studios",
+    "displayName": "Studio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slider_video": {
+      "displayName": "slider_video",
+      "type": "component",
+      "repeatable": true,
+      "component": "studio.slider-video"
+    },
+    "title": {
+      "displayName": "videos",
+      "type": "component",
+      "repeatable": true,
+      "component": "studio.videos"
+    }
+  }
+}

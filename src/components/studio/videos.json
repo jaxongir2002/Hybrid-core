@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_studio_videos",
+  "info": {
+    "displayName": "videos",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_about_videos_team_videos",
+  "info": {
+    "displayName": "teamVideo"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

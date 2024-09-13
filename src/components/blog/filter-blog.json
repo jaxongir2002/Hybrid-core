@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_blog_filter_blogs",
+  "info": {
+    "displayName": "filter_blog"
+  },
+  "options": {},
+  "attributes": {
+    "title_text": {
+      "type": "string"
+    }
+  }
+}

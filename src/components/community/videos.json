@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_community_videos",
+  "info": {
+    "displayName": "videos"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "string"
+    },
+    "alt": {
+      "type": "string"
+    }
+  }
+}
