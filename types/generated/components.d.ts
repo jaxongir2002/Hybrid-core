@@ -36,16 +36,6 @@ export interface SeoSeo extends Schema.Component {
   };
 }
 
-export interface LandingTags extends Schema.Component {
-  collectionName: 'components_landing_tags';
-  info: {
-    displayName: 'tags';
-  };
-  attributes: {
-    tags_text: Attribute.String;
-  };
-}
-
 export interface OurworkOurwork extends Schema.Component {
   collectionName: 'components_ourwork_ourworks';
   info: {
@@ -55,6 +45,16 @@ export interface OurworkOurwork extends Schema.Component {
     video: Attribute.String;
     alt: Attribute.String;
     name: Attribute.String;
+  };
+}
+
+export interface LandingTags extends Schema.Component {
+  collectionName: 'components_landing_tags';
+  info: {
+    displayName: 'tags';
+  };
+  attributes: {
+    tags_text: Attribute.String;
   };
 }
 
@@ -190,8 +190,8 @@ declare module '@strapi/types' {
       'studio.videos': StudioVideos;
       'studio.slider-video': StudioSliderVideo;
       'seo.seo': SeoSeo;
-      'landing.tags': LandingTags;
       'ourwork.ourwork': OurworkOurwork;
+      'landing.tags': LandingTags;
       'lab.lab-video-list': LabLabVideoList;
       'lab.lab-main': LabLabMain;
       'installation.installation-video': InstallationInstallationVideo;
