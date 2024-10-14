@@ -1,32 +1,24 @@
-'use strict';
+"use strict";
 
-const { createCoreController } = require('@strapi/strapi').factories;
+/**
+ *  post controller
+ */
 
-module.exports = createCoreController('api::blog.blog', ({ strapi }) => ({
-  async find(ctx) {
-    // Check if an ID is provided in the query parameters
-    const { id } = ctx.params;
+const {createCoreController} = require("@strapi/strapi").factories;
 
-    // If there is an ID, fetch the specific blog entry
-    if (id) {
-      const blog = await strapi.service('api::blog.blog').findOne(id);
+module.exports = createCoreController("api::blog.blog", ({strapi}) => ({
+  async findOne(ctx) {
+    const {slug} = ctx.params;
 
-      if (!blog) {
-        return ctx.notFound('Blog not found');
-      }
+    const query = {
+      filters: {slug},
+      ...ctx.query,
+    };
 
-      const sanitizedBlog = await this.sanitizeOutput(blog, ctx);
-      return this.transformResponse(sanitizedBlog);
-    }
-    await this.validateQuery(ctx);
-    const sanitizedQueryParams = await this.sanitizeQuery(ctx);
+    const work = await strapi.entityService.findMany("api::blog.blog", query);
 
-    const { results, pagination } = await strapi
-      .service('api::blog.blog')
-      .find(sanitizedQueryParams);
+    const sanitizedEntity = await this.sanitizeOutput(work);
 
-    const sanitizedResults = await this.sanitizeOutput(results, ctx);
-
-    return this.transformResponse(sanitizedResults, { pagination });
+    return this.transformResponse(sanitizedEntity[0]);
   },
 }));
