@@ -36,28 +36,6 @@ export interface SeoSeo extends Schema.Component {
   };
 }
 
-export interface OurworkOurwork extends Schema.Component {
-  collectionName: 'components_ourwork_ourworks';
-  info: {
-    displayName: 'ourwork';
-  };
-  attributes: {
-    video: Attribute.String;
-    alt: Attribute.String;
-    name: Attribute.String;
-  };
-}
-
-export interface LandingTags extends Schema.Component {
-  collectionName: 'components_landing_tags';
-  info: {
-    displayName: 'tags';
-  };
-  attributes: {
-    tags_text: Attribute.String;
-  };
-}
-
 export interface LabLabVideoList extends Schema.Component {
   collectionName: 'components_lab_lab_video_lists';
   info: {
@@ -76,6 +54,28 @@ export interface LabLabMain extends Schema.Component {
   };
   attributes: {
     video: Attribute.String;
+  };
+}
+
+export interface LandingTags extends Schema.Component {
+  collectionName: 'components_landing_tags';
+  info: {
+    displayName: 'tags';
+  };
+  attributes: {
+    tags_text: Attribute.String;
+  };
+}
+
+export interface OurworkOurwork extends Schema.Component {
+  collectionName: 'components_ourwork_ourworks';
+  info: {
+    displayName: 'ourwork';
+  };
+  attributes: {
+    video: Attribute.String;
+    alt: Attribute.String;
+    name: Attribute.String;
   };
 }
 
@@ -111,6 +111,31 @@ export interface BlogListMainList extends Schema.Component {
     description: Attribute.String;
     title: Attribute.String;
     date: Attribute.Date;
+  };
+}
+
+export interface AboutVideosVideos extends Schema.Component {
+  collectionName: 'components_about_videos_videos';
+  info: {
+    displayName: 'videos';
+    description: '';
+  };
+  attributes: {
+    video: Attribute.String;
+    alt: Attribute.String;
+    title: Attribute.String;
+  };
+}
+
+export interface AboutVideosTeamVideo extends Schema.Component {
+  collectionName: 'components_about_videos_team_videos';
+  info: {
+    displayName: 'teamVideo';
+  };
+  attributes: {
+    video: Attribute.String;
+    alt: Attribute.String;
+    title: Attribute.String;
   };
 }
 
@@ -159,50 +184,25 @@ export interface BlogCards extends Schema.Component {
   };
 }
 
-export interface AboutVideosVideos extends Schema.Component {
-  collectionName: 'components_about_videos_videos';
-  info: {
-    displayName: 'videos';
-    description: '';
-  };
-  attributes: {
-    video: Attribute.String;
-    alt: Attribute.String;
-    title: Attribute.String;
-  };
-}
-
-export interface AboutVideosTeamVideo extends Schema.Component {
-  collectionName: 'components_about_videos_team_videos';
-  info: {
-    displayName: 'teamVideo';
-  };
-  attributes: {
-    video: Attribute.String;
-    alt: Attribute.String;
-    title: Attribute.String;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'studio.videos': StudioVideos;
       'studio.slider-video': StudioSliderVideo;
       'seo.seo': SeoSeo;
-      'ourwork.ourwork': OurworkOurwork;
-      'landing.tags': LandingTags;
       'lab.lab-video-list': LabLabVideoList;
       'lab.lab-main': LabLabMain;
+      'landing.tags': LandingTags;
+      'ourwork.ourwork': OurworkOurwork;
       'installation.installation-video': InstallationInstallationVideo;
       'community.videos': CommunityVideos;
       'blog-list.main-list': BlogListMainList;
+      'about-videos.videos': AboutVideosVideos;
+      'about-videos.team-video': AboutVideosTeamVideo;
       'blog.text-video': BlogTextVideo;
       'blog.filter-blog': BlogFilterBlog;
       'blog.description-title': BlogDescriptionTitle;
       'blog.cards': BlogCards;
-      'about-videos.videos': AboutVideosVideos;
-      'about-videos.team-video': AboutVideosTeamVideo;
     }
   }
 }
